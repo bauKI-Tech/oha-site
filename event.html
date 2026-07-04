@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>ohá — an afternoon together · 28 June 2026 · it happened</title>
+<meta name="description" content="The first afternoon of the new ohá happened on 28 June 2026 at Atelier Oost, Amsterdam — forty mats, sold out. This is how it was planned. The story continues on Instagram @ohabysuhedaozyar." />
+<meta property="og:title" content="ohá — an afternoon together · it happened" />
+<meta property="og:description" content="Forty mats, sold out — the first ohá afternoon, Amsterdam 28 June 2026. The story continues." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/oha-core.css" />
+<script>document.documentElement.classList.add('js');addEventListener('load',function(){setTimeout(function(){if(!window.__ohaReveal){document.querySelectorAll('.reveal,.reveal-stagger').forEach(function(e){e.classList.add('in')});}},900);});</script>
+<style>
+/* ════ EVENT — the afternoon (warm reveal of the mystery) ════ */
+:root{ --max:1280px; }
+
+/* HERO */
+.hero{ position:relative; min-height:100svh; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; color:#FAF8F3; background:var(--noir); }
+.hero__media{ position:absolute; inset:-6%; transform:scale(1.12); opacity:.78; transition:transform 2.6s var(--ease-out), opacity 2s var(--ease-out); }
+.is-loaded .hero__media{ transform:scale(1); opacity:.92; }
+.hero__media img{ width:100%; height:112%; object-fit:cover; }
+.hero__veil{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(11,10,9,.5) 0%, rgba(11,10,9,.08) 32%, rgba(11,10,9,.22) 60%, rgba(11,10,9,.72) 100%); }
+.hero__content{ position:relative; z-index:2; padding:120px 32px 44px; display:flex; flex-direction:column; gap:clamp(20px,2.8vw,32px); max-width:1100px; }
+.hero__date-strip{ display:flex; gap:clamp(18px,3vw,48px); align-items:baseline; flex-wrap:wrap; font-size:11px; letter-spacing:0.25em; text-transform:uppercase; opacity:.86; }
+.hero__date-strip strong{ font-weight:500; }
+.hero__title{ font-family:var(--type-display); font-weight:600; font-size:clamp(64px, 10vw, 168px); line-height:.85; letter-spacing:-0.03em; max-width:14ch; }
+.hero__title em{ font-family:var(--type-serif); font-style:italic; font-weight:400; }
+.hero__sub{ font-family:var(--type-serif); font-style:italic; font-size:clamp(20px, 2.2vw, 30px); line-height:1.2; max-width:36ch; opacity:.95; }
+.hero__cta-row{ display:flex; gap:18px; align-items:center; flex-wrap:wrap; }
+
+/* INTRO */
+.intro{ padding:clamp(96px,14vh,128px) 0; }
+.intro__inner{ max-width:var(--max); margin:0 auto; padding:0 32px; display:grid; grid-template-columns:1fr 2fr; gap:clamp(40px,7vw,96px); align-items:start; }
+.intro__lead{ font-family:var(--type-serif); font-style:italic; font-size:clamp(28px, 3.4vw, 48px); line-height:1.12; color:var(--ink); max-width:24ch; letter-spacing:-0.01em; }
+.intro__body{ font-size:17px; line-height:1.7; color:var(--ink-2); max-width:52ch; }
+.intro__body p + p{ margin-top:18px; }
+.intro__body p strong{ color:var(--ink); font-weight:500; }
+
+/* DAY TIMELINE */
+.day{ background:var(--bg-cream); padding:clamp(96px,14vh,128px) 0; }
+.day__inner{ max-width:var(--max); margin:0 auto; padding:0 32px; }
+.day__top{ display:flex; justify-content:space-between; align-items:flex-end; gap:48px; margin-bottom:80px; flex-wrap:wrap; }
+.day__top h2{ font-family:var(--type-display); font-weight:600; font-size:clamp(56px, 7vw, 120px); line-height:.9; letter-spacing:-0.025em; }
+.day__top p{ font-family:var(--type-serif); font-style:italic; font-size:20px; max-width:32ch; color:var(--ink-mute); }
+.timeline{ position:relative; display:grid; grid-template-columns:repeat(5, 1fr); gap:32px; }
+.timeline::before{ content:""; position:absolute; left:0; right:0; top:32px; height:1px; background:var(--ink); transform-origin:left; animation:timelineDraw 2.2s var(--ease-out) .3s forwards; transform:scaleX(0); }
+@keyframes timelineDraw{ to{ transform:scaleX(1); } }
+.t-step{ position:relative; padding-top:48px; }
+.t-step::before{ content:""; position:absolute; top:26px; left:0; width:12px; height:12px; border-radius:50%; background:var(--ink); }
+.t-step__time{ font-family:var(--type-display); font-weight:500; font-size:32px; line-height:1; letter-spacing:-0.01em; margin-bottom:14px; }
+.t-step__title{ font-family:var(--type-serif); font-style:italic; font-size:18px; line-height:1.25; color:var(--ink); margin-bottom:8px; }
+.t-step__desc{ font-size:13px; line-height:1.6; color:var(--ink-mute); }
+
+/* CLASS */
+.class-sec{ padding:clamp(96px,14vh,128px) 0; }
+.class__inner{ max-width:var(--max); margin:0 auto; padding:0 32px; display:grid; grid-template-columns:7fr 5fr; gap:clamp(40px,6vw,80px); align-items:center; }
+.class__media{ aspect-ratio:5/4; overflow:hidden; }
+.class__media img{ width:100%; height:100%; object-fit:cover; }
+.class__text{ display:flex; flex-direction:column; gap:24px; }
+.class__text h2{ font-family:var(--type-display); font-weight:600; font-size:clamp(44px, 5.5vw, 80px); line-height:.95; letter-spacing:-0.025em; }
+.class__text h2 em{ font-family:var(--type-serif); font-style:italic; font-weight:400; }
+.class__text p{ font-size:17px; line-height:1.7; color:var(--ink-2); }
+.class__text p + p{ margin-top:-4px; }
+.class__instructor{ margin-top:8px; padding-top:24px; border-top:1px solid var(--rule); display:flex; align-items:center; gap:18px; }
+.class__avatar{ width:56px; height:56px; border-radius:50%; background:var(--ink); display:grid; place-items:center; color:var(--bg); font-family:var(--type-display); font-weight:500; font-size:18px; }
+.class__avatar-text strong{ display:block; font-weight:500; font-size:14px; color:var(--ink); }
+.class__avatar-text span{ font-size:11px; letter-spacing:0.15em; text-transform:uppercase; color:var(--ink-mute); }
+
+/* DRESS CODE */
+.included{ background:var(--ink); color:var(--bg); padding:clamp(96px,14vh,128px) 0; }
+.included__inner{ max-width:var(--max); margin:0 auto; padding:0 32px; text-align:center; }
+.included__eyebrow{ font-size:11px; letter-spacing:0.25em; text-transform:uppercase; opacity:.65; display:block; margin-bottom:28px; }
+.included__title{ font-family:var(--type-display); font-weight:600; font-size:clamp(44px,7vw,108px); line-height:.92; letter-spacing:-0.025em; max-width:18ch; margin:0 auto; }
+.included__title em{ font-family:var(--type-serif); font-style:italic; font-weight:400; }
+.included__note{ font-family:var(--type-serif); font-style:italic; font-size:20px; opacity:.7; max-width:44ch; margin:32px auto 0; }
+
+/* VENUE */
+.venue{ padding:clamp(96px,14vh,128px) 0; }
+.venue__inner{ max-width:var(--max); margin:0 auto; padding:0 32px; display:grid; grid-template-columns:5fr 7fr; gap:clamp(40px,6vw,80px); align-items:center; }
+.venue__text{ display:flex; flex-direction:column; gap:28px; }
+.venue__text h2{ font-family:var(--type-display); font-weight:600; font-size:clamp(44px, 5.5vw, 80px); line-height:.95; letter-spacing:-0.025em; }
+.venue__text h2 em{ font-family:var(--type-serif); font-style:italic; font-weight:400; }
+.venue__text p{ font-size:17px; line-height:1.7; color:var(--ink-2); max-width:46ch; }
+.venue__text p + p{ margin-top:-4px; }
+.venue__details{ display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:8px; padding-top:24px; border-top:1px solid var(--rule); }
+.venue__detail h5{ font-size:10px; letter-spacing:0.25em; text-transform:uppercase; color:var(--ink-mute); margin-bottom:6px; }
+.venue__detail p{ font-size:14px; }
+.venue__media{ aspect-ratio:16/11; overflow:hidden; }
+.venue__media img{ width:100%; height:100%; object-fit:cover; }
+
+/* FOUNDER QUOTE */
+.fq{ background:var(--bg-cream); padding:clamp(96px,14vh,128px) 32px; }
+.fq__inner{ max-width:1000px; margin:0 auto; display:grid; grid-template-columns:200px 1fr; gap:clamp(40px,5vw,64px); align-items:center; }
+.fq__portrait{ aspect-ratio:1/1; overflow:hidden; border-radius:50%; }
+.fq__portrait img{ width:100%; height:100%; object-fit:cover; object-position:center 42%; }
+.fq__quote{ font-family:var(--type-serif); font-style:italic; font-size:clamp(28px, 3.4vw, 44px); line-height:1.2; letter-spacing:-0.01em; }
+.fq__cite{ margin-top:24px; font-size:11px; letter-spacing:0.25em; text-transform:uppercase; color:var(--ink-mute); }
+
+/* TICKETS */
+.tickets{ background:var(--burgundy); color:var(--bg); padding:clamp(104px,16vh,128px) 0; position:relative; overflow:hidden; }
+.tickets__inner{ max-width:880px; margin:0 auto; padding:0 32px; text-align:center; display:flex; flex-direction:column; gap:36px; }
+.tickets__eyebrow{ font-size:11px; letter-spacing:0.3em; text-transform:uppercase; opacity:.7; }
+.tickets__visual{ width:100%; max-width:clamp(300px, 50vw, 560px); margin:0 auto; }
+.tickets__visual img{ width:100%; height:auto; filter:drop-shadow(0 26px 48px rgba(0,0,0,.42)); }
+.tickets__title{ font-family:var(--type-display); font-weight:600; font-size:clamp(56px, 8vw, 132px); line-height:.88; letter-spacing:-0.025em; }
+.tickets__title em{ font-family:var(--type-serif); font-style:italic; font-weight:400; }
+.tickets__row{ display:grid; grid-template-columns:repeat(3, 1fr); gap:32px; margin-top:8px; padding-top:44px; border-top:1px solid #FAF8F333; text-align:left; }
+.tickets__row > div h5{ font-size:10px; letter-spacing:0.25em; text-transform:uppercase; opacity:.6; margin-bottom:10px; }
+.tickets__row > div p{ font-family:var(--type-display); font-weight:500; font-size:32px; line-height:1; letter-spacing:-0.01em; }
+.tickets__row > div h5 .avail-dot{ display:inline-block; width:6px; height:6px; border-radius:50%; background:#FAF8F3; margin-left:5px; vertical-align:middle; animation:pulse 2.4s ease-in-out infinite; }
+.spots-bar{ margin-top:14px; height:3px; width:100%; max-width:170px; background:#FAF8F324; border-radius:2px; overflow:hidden; }
+.spots-bar i{ display:block; height:100%; width:0; background:var(--bg); border-radius:2px; transition:width 1.6s var(--ease-out); }
+.tickets__consent{ display:flex; flex-direction:column; gap:16px; align-items:center; }
+.consent-check{ display:flex; gap:12px; align-items:flex-start; max-width:54ch; text-align:left; font-size:13px; line-height:1.5; opacity:.92; cursor:pointer; }
+.consent-check input{ margin-top:2px; width:16px; height:16px; accent-color:#FAF8F3; flex:none; }
+.consent-check a{ text-decoration:underline; text-underline-offset:2px; }
+.consent-aside{ font-size:12px; line-height:1.5; opacity:.72; max-width:48ch; }
+.consent-aside a{ text-decoration:underline; text-underline-offset:2px; }
+.tickets__cta-row{ display:flex; justify-content:center; gap:18px; flex-wrap:wrap; }
+.tickets__limit{ font-family:var(--type-serif); font-style:italic; font-size:18px; opacity:.85; }
+
+/* FAQ */
+.faq{ padding:clamp(96px,14vh,128px) 0; }
+.faq__inner{ max-width:var(--max); margin:0 auto; padding:0 32px; display:grid; grid-template-columns:1fr 2fr; gap:clamp(40px,7vw,96px); align-items:start; }
+.faq__title{ font-family:var(--type-display); font-weight:600; font-size:clamp(48px, 6vw, 96px); line-height:.92; letter-spacing:-0.025em; position:sticky; top:120px; }
+.faq__list{ display:flex; flex-direction:column; }
+.faq__item{ border-top:1px solid var(--rule); }
+.faq__item:last-child{ border-bottom:1px solid var(--rule); }
+.faq__q{ width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; gap:24px; padding:28px 0; font-family:var(--type-display); font-weight:500; font-size:24px; letter-spacing:-0.01em; transition:opacity .3s var(--ease); list-style:none; cursor:pointer; }
+.faq__q::-webkit-details-marker{ display:none; }
+.faq__q:hover{ opacity:.7; }
+.faq__q::after{ content:"+"; font-weight:400; transition:transform .3s var(--ease); font-size:32px; line-height:.8; flex:none; }
+.faq__item[open] .faq__q::after{ transform:rotate(45deg); }
+.faq__a{ max-height:0; overflow:hidden; transition:max-height .5s var(--ease); }
+.faq__a-inner{ padding:0 0 28px; font-size:16px; line-height:1.7; color:var(--ink-2); max-width:60ch; }
+.faq__item[open] .faq__a{ max-height:520px; }
+
+/* FINAL CTA */
+.final-cta{ padding:clamp(104px,16vh,128px) 32px; text-align:center; background:var(--bg); border-top:1px solid var(--rule); }
+.final-cta__title{ font-family:var(--type-display); font-weight:600; font-size:clamp(72px, 11vw, 200px); line-height:.85; letter-spacing:-0.03em; margin-bottom:48px; }
+.final-cta__title em{ font-family:var(--type-serif); font-style:italic; font-weight:400; }
+
+/* RESPONSIVE */
+@media (max-width: 900px){
+  .nav__back{ display:none; }
+  .intro__inner, .class__inner, .venue__inner, .faq__inner, .fq__inner{ grid-template-columns:1fr; gap:32px; }
+  .day__top{ flex-direction:column; align-items:flex-start; }
+  .timeline{ grid-template-columns:1fr; gap:16px; }
+  .timeline::before{ display:none; }
+  .t-step{ padding-top:24px; border-top:1px solid var(--rule); }
+  .t-step::before{ display:none; }
+  .tickets__row{ grid-template-columns:1fr; gap:24px; }
+  .faq__title{ position:relative; top:0; }
+  .fq__portrait{ width:140px; margin:0 auto; }
+  .hero__content{ padding:120px 22px 36px; }
+}
+</style>
+</head>
+<body class="grain">
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="/" class="nav__back">back to ohá</a>
+  <a href="/" class="nav__mark"><span class="logomark logomark--white"><span>ohá</span></span></a>
+  <a href="#tickets" class="nav__cta">Reserve · €49</a>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero__media" data-parallax="6">
+    <img src="references/opt/gen_empower_v2.webp" alt="Women practising Pilates together in a sunlit studio" fetchpriority="high" decoding="async" />
+  </div>
+  <div class="hero__veil"></div>
+  <div class="hero__content reveal-stagger">
+    <div class="hero__date-strip">
+      <span><strong>Sunday 28 · 06 · 2026</strong></span>
+      <span>Atelier Oost · Amsterdam</span>
+      <span>14:00 — 17:00</span>
+      <span>40 mats</span>
+      <span>€49 inclusive</span>
+    </div>
+    <h1 class="hero__title">an afternoon, <em>together.</em></h1>
+    <p class="hero__sub">The first afternoon of the new ohá — and it happened. Forty mats, sold out. One guided class, matcha, Turkish coffee, and a room that did not want to leave. Below is how it was planned; the memories live on Instagram.</p>
+    <div class="hero__cta-row">
+      <a href="/#afternoon" class="btn btn--solid">see how it was</a>
+      <a href="https://www.instagram.com/ohabysuhedaozyar/" target="_blank" rel="noopener" class="btn btn--ghost">follow ohá ↗</a>
+    </div>
+  </div>
+</header>
+
+<!-- INTRO -->
+<section class="intro" id="what">
+  <div class="intro__inner">
+    <div class="reveal"><span class="t-eyebrow">— what this is</span></div>
+    <div>
+      <p class="intro__lead reveal">A small, considered afternoon. Not a launch party. A first class. First community.</p>
+      <div class="intro__body reveal" style="margin-top:48px">
+        <p>For thirteen years ohá was a clothing label, a Turkish blog, a name readers wrote back to me. On 28 June it becomes a quieter thing, <strong>a house of objects for the body</strong>. The mat. The clip. The grip. The towel. The shopper. Five objects, to begin.</p>
+        <p>This afternoon is how we begin. Forty people on forty mats in a room full of day light. <strong>One class led by a certified instructor</strong> I trust. After class, we slow down together, sharing Turkish coffee, matcha, and healthy snacks around a long oak table. A moment to connect, unwind, and enjoy positive energy, meaningful conversations, and a beautiful memory together.</p>
+        <p>No launch noise. No press. No countdown. Just a small group, a quiet room, and the new ohá in your hands by the end of it.</p>
+        <p>If you have been here from the beginning, thank you. If you have just arrived, welcome.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DAY TIMELINE -->
+<section class="day">
+  <div class="day__inner">
+    <div class="day__top">
+      <h2 class="reveal">The afternoon, hour by hour.</h2>
+      <p class="reveal">Three hours from arrival to departure. Slow on purpose, never rushed.</p>
+    </div>
+    <div class="timeline reveal-stagger">
+      <div class="t-step">
+        <div class="t-step__time">14:00</div>
+        <div class="t-step__title">Doors</div>
+        <p class="t-step__desc">A quiet welcome, turkish coffee, your goodie bag waiting at your mat, time to settle.</p>
+      </div>
+      <div class="t-step">
+        <div class="t-step__time">15:00</div>
+        <div class="t-step__title">Class begins</div>
+        <p class="t-step__desc">Fifty-five minutes of guided mat Pilates, power class, full body, accessible to every level.</p>
+      </div>
+      <div class="t-step">
+        <div class="t-step__time">15:55</div>
+        <div class="t-step__title">Stillness</div>
+        <p class="t-step__desc">Ten minutes of stretching. A moment to feel your body. A custom soundscape, a breath you can keep all week.</p>
+      </div>
+      <div class="t-step">
+        <div class="t-step__time">16:05</div>
+        <div class="t-step__title">Matcha & Talk</div>
+        <p class="t-step__desc">Şüheda sits with us. Sharing Turkish coffee, matcha, and nourishing bites around a long oak table together. A coffee shared, a memory for forty years. Stay as long as you like.</p>
+      </div>
+      <div class="t-step">
+        <div class="t-step__time">17:00</div>
+        <div class="t-step__title">Departure</div>
+        <p class="t-step__desc">You leave with your goodie bag and the rest of your afternoon still in your hands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDITORIAL STRIP -->
+<section class="strip">
+  <img src="references/opt/gen_ohagirls_v2.webp" alt="Women together with coffee after a Pilates class" loading="lazy" data-parallax="7" />
+  <div class="strip__overlay"></div>
+  <div class="strip__caption">
+    <span class="e">#OHÁGIRLS</span>
+    <p class="l">"There is a special kind of joy shared between woman, and it's real."</p>
+  </div>
+</section>
+
+<!-- THE CLASS -->
+<section class="class-sec">
+  <div class="class__inner">
+    <figure class="class__media reveal">
+      <img src="references/opt/web_event_instructor_hands.webp" alt="Instructor hands adjusting alignment on a black mat" loading="lazy" />
+    </figure>
+    <div class="class__text reveal">
+      <span class="t-eyebrow">— the class</span>
+      <h2>Powerful, controlled, <em>intentional.</em></h2>
+      <p>A 55-minute mat Pilates class designed to challenge the entire body through strength, endurance, control, posture, breath, and deep muscular connection. This is a powerful full-body practice that pushes you to explore the potential of your body with precision and purpose.</p>
+      <p>Every movement is guided by breath, alignment, control, and feeling, allowing you to move with awareness and connect more deeply to your body.</p>
+      <p>Ohá welcomes both beginners and lifelong practitioners alike. No experience required. No performance expected. No mirrors at the front of the room. You will leave feeling stronger, taller, lighter, and more connected than when you arrived.</p>
+      <p>If you are pregnant, recovering from surgery, or working with an injury, please write to us beforehand. The instructor will thoughtfully adapt the practice to support you, never asking your body to move beyond what it needs.</p>
+      <div class="class__instructor">
+        <div class="class__avatar">RV</div>
+        <div class="class__avatar-text">
+          <strong>Class led by — Rohdé Veerhuis</strong>
+          <span>certified classical instructor · INR Reformer Pilates, Woerden</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DRESS CODE -->
+<section class="included">
+  <div class="included__inner">
+    <span class="included__eyebrow">— before you come</span>
+    <h2 class="included__title reveal">Dress code <em>—</em> all-black activewear.</h2>
+    <p class="included__note reveal">Arrive already dressed for class. Grip socks and a small towel are provided. There are no changing rooms at the studio.</p>
+  </div>
+</section>
+
+<!-- VENUE -->
+<section class="venue">
+  <div class="venue__inner">
+    <div class="venue__text reveal">
+      <span class="t-eyebrow">— the venue</span>
+      <h2>Atelier Oost · <em>Amsterdam.</em></h2>
+      <p>A quiet light-filled space in Amsterdam-Oost. Arched windows, oak herringbone floors, cream plaster walls, a single olive tree in a terracotta pot. We chose it because the afternoon light pours in slow and honey-coloured, and stays through the whole class.</p>
+      <p>The room holds forty mats — and that is the cap. We will not add a forty-first.</p>
+      <div class="venue__details">
+        <div class="venue__detail"><h5>Address</h5><p>Atelier Oost<br />Amsterdam, NL<br />— exact address sent after booking</p></div>
+        <div class="venue__detail"><h5>Travel</h5><p>5 min from Amstel station<br />Bike racks at the door<br />Coffee at the corner</p></div>
+        <div class="venue__detail"><h5>Good to know</h5><p>Ground floor<br />Arrive dressed for class<br />No changing rooms</p></div>
+        <div class="venue__detail"><h5>Capacity</h5><p>40 mats — strict<br />Certified instructor<br />ohá team for matcha</p></div>
+      </div>
+    </div>
+    <figure class="venue__media reveal">
+      <img src="references/opt/gen_venue_v2.webp" alt="Atelier Oost studio interior with an ohá mat" loading="lazy" />
+    </figure>
+  </div>
+</section>
+
+<!-- FOUNDER QUOTE -->
+<section class="fq">
+  <div class="fq__inner reveal">
+    <figure class="fq__portrait">
+      <img src="references/opt/real_suheda.webp" alt="Şüheda Özyar" loading="lazy" />
+    </figure>
+    <div>
+      <p class="fq__quote">"Twelve years ago, I started OHÁ because readers wrote one word back to me. On June 28, I would love to bring that feeling to life together. An afternoon to meet, move, talk, share coffee, and create a warm, positive energy through Pilates, conversation, and community. A moment for all of us to come together as OHÁ."</p>
+      <p class="fq__cite">— Şüheda Özyar, founder</p>
+    </div>
+  </div>
+</section>
+
+<!-- TICKETS -->
+<section class="tickets" id="tickets">
+  <div class="tickets__inner reveal-stagger">
+    <figure class="tickets__visual">
+      <img src="references/opt/event_ticket.webp" alt="ohá event ticket — an afternoon together · 28 June 2026 · 14:00–17:00 · €49 · Atelier Oost Amsterdam" loading="lazy" />
+    </figure>
+    <span class="tickets__eyebrow">— reserve</span>
+    <h2 class="tickets__title">€49 · <em>your spot.</em></h2>
+    <div class="tickets__row">
+      <div><h5>One ticket</h5><p>€49</p></div>
+      <div><h5>Goodie bag value</h5><p>€190</p></div>
+      <div><h5>Availability <span class="avail-dot"></span></h5><p><span data-spots>30</span> left</p><div class="spots-bar"><i data-spots-fill></i></div></div>
+    </div>
+    <div class="tickets__consent" data-consent-gate>
+      <label class="consent-check">
+        <input type="checkbox" data-consent />
+        <span>I understand photos and video will be taken during the afternoon for ohá's social and brand use, and I agree to their use.</span>
+      </label>
+      <p class="consent-aside">Injury or pregnant? <a href="mailto:contact@shopoha.com?subject=oha%20health%20note">Email us privately</a> and we'll adapt the class for you.</p>
+      <div class="tickets__cta-row">
+        <a id="reserve" href="#" class="btn btn--solid is-disabled" data-consent-target aria-disabled="true" tabindex="-1" style="background:#FAF8F3;color:#1A1A1A">Reserve · €49</a>
+        <a href="mailto:contact@shopoha.com" class="btn btn--ghost">Email ohá</a>
+      </div>
+    </div>
+    <p class="tickets__limit">Forty spots only — once they are gone, they are gone. Secure payment &amp; iDEAL through Shopify.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="faq__inner">
+    <h2 class="faq__title reveal">Quiet<br />questions.</h2>
+    <div class="faq__list reveal">
+      <details class="faq__item">
+        <summary class="faq__q">Do I need to know Pilates?</summary>
+        <div class="faq__a"><div class="faq__a-inner">No, you'll be guided throughout the entire class. This could even be the start of something new for you.</div></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">What should I bring?</summary>
+        <div class="faq__a"><div class="faq__a-inner">You don't need to bring anything, just a positive vibe and all-black Pilates or yoga wear. Grip socks and a small workout towel will be provided by us. Please arrive already dressed for class, as there are no changing rooms at the studio.</div></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">Can I bring a friend?</summary>
+        <div class="faq__a"><div class="faq__a-inner">Of course, you're always welcome to come together. Your friend will simply need to book a spot for the Pilates class as well. As long as spots are available, bookings remain open.</div></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">Can I get a refund?</summary>
+        <div class="faq__a"><div class="faq__a-inner">Cancellations can be made up to 48 hours before the event by emailing contact@shopoha.com. You will then receive a full refund, and your spot will be released to someone else. Unfortunately, cancellations made less than 48 hours before the event are non-refundable.</div></div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__q">What if I have an injury or I'm pregnant?</summary>
+        <div class="faq__a"><div class="faq__a-inner">That's completely okay, we simply ask you to let the instructor know before the class begins. At the start of the session, the instructor will also check in with the group to see if there's anything that should be taken into consideration during the practice. Because this is a powerful full-body class, we kindly advise against joining if you are more than five months pregnant.</div></div>
+      </details>
+      <details class="faq__item" id="faq-photo">
+        <summary class="faq__q">Will there be photography?</summary>
+        <div class="faq__a"><div class="faq__a-inner">Yes, photos and videos will be taken during the event for social media and brand purposes. By purchasing a Pilates class spot, you agree to the use of this content across OHÁ channels and platforms.</div></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <h2 class="final-cta__title reveal">Until the next <em>afternoon.</em></h2>
+  <a href="https://www.instagram.com/ohabysuhedaozyar/" target="_blank" rel="noopener" class="btn btn--dark reveal">follow @ohabysuhedaozyar</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot__inner">
+    <span>© 2026 ohá · Amsterdam</span>
+    <span><a href="mailto:contact@shopoha.com">contact@shopoha.com</a> · <a href="tel:+31653360343">+31 6 53 36 03 43</a></span>
+    <span><a href="/">← back to ohá</a></span>
+  </div>
+</footer>
+
+<!-- MOTION -->
+<script src="assets/lenis.min.js"></script>
+<script src="assets/oha-motion.js" defer></script>
+<script>
+/* ── TICKETS → real Shopify checkout ──
+   Paste the Shopify cart/checkout permalink for the event variant below.
+   Example: https://shopoha.myshopify.com/cart/49123456789:1
+   Photography consent + optional health note are passed as Shopify cart attributes. */
+var OHA_CHECKOUT = "https://shopoha.myshopify.com/cart/56715140596038:1"; /* Shopify cart permalink — event ticket variant (28 June 2026) */
+(function () {
+  var reserve = document.getElementById('reserve');
+  var consent = document.querySelector('[data-consent]');
+  if (!reserve) return;
+  reserve.addEventListener('click', function (e) {
+    if (consent && !consent.checked) {            // hard consent gate (covers keyboard activation, not just mouse)
+      e.preventDefault();
+      consent.focus();
+      return;
+    }
+    if (!OHA_CHECKOUT) {                           // checkout not wired yet → email fallback
+      e.preventDefault();
+      window.location.href = 'mailto:contact@shopoha.com'
+        + '?subject=' + encodeURIComponent('oha — Reserve a spot (28 June)')
+        + '&body=' + encodeURIComponent('I would like to reserve a spot for the oha afternoon on 28 June.');
+      return;
+    }
+    try {
+      var url = new URL(OHA_CHECKOUT);            // robust query building (no brittle string concat)
+      url.searchParams.set('attributes[Photography consent]', 'Agreed');
+      reserve.setAttribute('href', url.toString());
+    } catch (err) { /* malformed OHA_CHECKOUT → leave href untouched */ }
+  });
+})();
+</script>
+
+</body>
+</html>

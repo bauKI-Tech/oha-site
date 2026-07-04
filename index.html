@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>ohá — the first afternoon happened · Amsterdam</title>
+<meta name="description" content="On 28 June 2026, forty women rolled out forty mats at Atelier Oost Amsterdam — the first gathering of the new ohá. Sold out. This is what it looked like, and what comes next." />
+<meta property="og:title" content="ohá — the first afternoon happened" />
+<meta property="og:description" content="Forty mats. One room. Sold out. The first afternoon of the new ohá — Amsterdam, 28 June 2026. The story continues." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/oha-core.css" />
+<script>document.documentElement.classList.add('js');addEventListener('load',function(){setTimeout(function(){if(!window.__ohaReveal){document.querySelectorAll('.reveal,.reveal-stagger').forEach(function(e){e.classList.add('in')});}},900);});</script>
+<style>
+/* ════ HOME — mysterious teaser (noir → dawn) ════ */
+
+/* HERO */
+.hero{ position:relative; min-height:100svh; overflow:hidden; background:var(--noir); display:flex; flex-direction:column; justify-content:flex-end; color:#FAF8F3; }
+.hero__media{ position:absolute; inset:-6%; transform:scale(1.12); opacity:.72; transition:transform 3s var(--ease-out), opacity 1.8s var(--ease-out); }
+.is-loaded .hero__media{ transform:scale(1); opacity:1; }
+.hero__media img{ width:100%; height:112%; object-fit:cover; object-position:center 34%; }
+.hero__veil{ position:absolute; inset:0; background:
+  linear-gradient(180deg, rgba(11,10,9,.46) 0%, rgba(11,10,9,.03) 23%, rgba(11,10,9,.06) 50%, rgba(11,10,9,.5) 75%, rgba(11,10,9,.9) 100%),
+  linear-gradient(76deg, rgba(11,10,9,.58) 0%, rgba(11,10,9,.12) 44%, rgba(11,10,9,0) 64%); }
+.hero__content{ position:relative; z-index:2; padding:120px 32px 30px; display:flex; flex-direction:column; gap:clamp(20px,3vw,34px); max-width:1180px; }
+.hero__eyebrow{ font-size:11px; letter-spacing:0.32em; text-transform:uppercase; opacity:.82; }
+.hero__title{ font-family:var(--type-serif); font-style:italic; font-weight:400; font-size:clamp(38px,6.2vw,104px); line-height:1.0; letter-spacing:-0.01em; max-width:17ch; }
+.hero__title b{ font-family:var(--type-display); font-style:normal; font-weight:600; letter-spacing:-0.02em; }
+.hero__sub{ font-size:clamp(14px,1.15vw,16px); line-height:1.75; max-width:50ch; opacity:.86; }
+.hero__ctas{ display:flex; gap:16px; flex-wrap:wrap; align-items:center; margin-top:4px; }
+.hero__bar{ position:relative; z-index:2; border-top:1px solid var(--rule-light); margin:0 32px; padding:20px 0 30px; display:flex; gap:clamp(20px,4vw,52px); flex-wrap:wrap; align-items:baseline; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; opacity:.84; }
+.hero__bar strong{ font-weight:500; }
+.hero__bar .scroll{ margin-left:auto; display:inline-flex; align-items:center; gap:12px; opacity:.7; }
+.hero__bar .scroll::after{ content:""; width:1px; height:34px; background:#FAF8F3; transform-origin:top; animation:scrollPulse 2.4s var(--ease) infinite; }
+@keyframes scrollPulse{ 0%,100%{ opacity:.25; transform:scaleY(.5); } 50%{ opacity:1; transform:scaleY(1); } }
+
+/* HUSH — the dark hush before the warmth */
+.hush{ background:var(--noir-2); color:#FAF8F3; padding:clamp(120px,18vh,200px) 32px; display:grid; place-items:center; text-align:center; }
+.hush__line{ font-family:var(--type-serif); font-style:italic; font-size:clamp(28px,4.4vw,68px); line-height:1.18; letter-spacing:-0.01em; max-width:20ch; }
+.hush__line em{ color:var(--bg-oak); font-style:italic; }
+.hush__sub{ margin-top:40px; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; opacity:.55; }
+
+/* ESSENCE — the dawn: what this is, just enough */
+.essence{ padding:clamp(96px,16vh,176px) 0; background:var(--bg); }
+.essence__inner{ max-width:var(--max); margin:0 auto; padding:0 32px; display:grid; grid-template-columns:1fr 1fr; gap:clamp(48px,7vw,120px); align-items:center; }
+.essence__lead{ font-family:var(--type-serif); font-style:italic; font-size:clamp(28px,3.6vw,52px); line-height:1.14; letter-spacing:-0.01em; max-width:18ch; }
+.essence__body{ font-size:16px; line-height:1.75; color:var(--ink-2); max-width:44ch; margin-top:28px; }
+.essence__facts{ display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--rule-strong); border:1px solid var(--rule-strong); }
+.fact{ background:var(--bg); padding:30px 28px; }
+.fact h5{ font-size:10px; letter-spacing:0.25em; text-transform:uppercase; color:var(--ink-mute); margin-bottom:12px; }
+.fact p{ font-family:var(--type-display); font-weight:500; font-size:clamp(24px,2.4vw,34px); line-height:1; letter-spacing:-0.01em; }
+.fact p em{ font-family:var(--type-serif); font-style:italic; font-weight:400; }
+.fact span{ display:block; margin-top:8px; font-size:12px; color:var(--ink-mute); letter-spacing:0.02em; text-transform:none; }
+.essence__cta{ margin-top:44px; }
+
+/* THE AFTERNOON — remembered (post-event recap) */
+.after{ background:var(--bg); padding:clamp(96px,15vh,170px) 32px clamp(40px,6vh,70px); }
+.after__inner{ max-width:var(--max); margin:0 auto; }
+.after__head{ margin-bottom:clamp(40px,6vw,72px); }
+.after__title{ font-family:var(--type-display); font-weight:600; font-size:clamp(40px,5.5vw,84px); line-height:.94; letter-spacing:-0.025em; margin-top:20px; }
+.after__title em{ font-family:var(--type-serif); font-style:italic; font-weight:400; }
+.after__grid{ display:grid; grid-template-columns:1.25fr .9fr; gap:clamp(24px,4vw,64px); align-items:start; }
+.after__main{ aspect-ratio:3/4; overflow:hidden; background:var(--noir-2); }
+.after__main img, .after__second img{ width:100%; height:100%; object-fit:cover; display:block; transform:scale(1.03); transition:transform 2s var(--ease); }
+.after__main:hover img, .after__second:hover img{ transform:scale(1); }
+.after__side{ display:flex; flex-direction:column; gap:clamp(24px,3vw,40px); padding-top:clamp(12px,4vw,56px); }
+.after__quote p{ font-family:var(--type-serif); font-style:italic; font-size:clamp(24px,2.6vw,38px); line-height:1.2; letter-spacing:-0.01em; }
+.after__quote cite{ display:block; margin-top:14px; font-style:normal; font-size:11px; letter-spacing:0.25em; text-transform:uppercase; color:var(--ink-mute); }
+.after__second{ aspect-ratio:4/5; overflow:hidden; max-width:360px; background:var(--noir-2); }
+.after__facts{ list-style:none; display:grid; grid-template-columns:repeat(3,auto); gap:clamp(18px,3vw,44px); padding:22px 0 0; border-top:1px solid var(--rule-strong); }
+.after__facts strong{ font-family:var(--type-display); font-weight:600; font-size:clamp(20px,2vw,30px); letter-spacing:-0.01em; display:block; }
+.after__facts span{ font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-mute); margin-top:6px; display:block; }
+
+/* FROM THE FEED — instagram tiles */
+.feed{ background:#EFE7DA; padding:clamp(96px,15vh,160px) 32px; }
+.feed__head{ max-width:760px; margin:0 auto 56px; text-align:center; }
+.feed__head .e{ font-size:11px; letter-spacing:0.3em; text-transform:uppercase; opacity:.55; }
+.feed__head h2{ font-family:var(--type-display); font-weight:600; font-size:clamp(40px,5.5vw,84px); line-height:.92; letter-spacing:-0.025em; margin:22px 0 0; }
+.feed__head h2 em{ font-family:var(--type-serif); font-style:italic; font-weight:400; }
+.feed__head p{ font-size:15px; line-height:1.7; color:var(--ink-2); max-width:46ch; margin:20px auto 0; }
+.feed__head p a{ border-bottom:1px solid currentColor; }
+.feed__grid{ max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.tile{ position:relative; display:block; aspect-ratio:4/5; overflow:hidden; background:var(--bg); }
+.tile img{ width:100%; height:100%; object-fit:cover; display:block; transform:scale(1.02); transition:transform 1.6s var(--ease); }
+.tile:hover img{ transform:scale(1.07); }
+.tile__hint{ position:absolute; inset:auto 0 0 0; padding:14px 16px; font-size:10px; letter-spacing:0.22em; text-transform:uppercase; color:#FAF8F3; background:linear-gradient(180deg, transparent, rgba(11,10,9,.55)); opacity:0; transform:translateY(6px); transition:opacity .5s var(--ease), transform .5s var(--ease); }
+.tile:hover .tile__hint{ opacity:1; transform:none; }
+.feed__cta{ text-align:center; margin-top:52px; }
+
+/* MARQUEE band */
+.band{ background:var(--ink); color:var(--bg); }
+.band .marquee__track span{ color:var(--bg); }
+
+/* WAITLIST */
+.waitlist{ background:var(--burgundy); color:var(--bg); padding:clamp(96px,16vh,168px) 32px; text-align:center; }
+.waitlist__inner{ max-width:640px; margin:0 auto; display:flex; flex-direction:column; gap:24px; align-items:center; }
+.waitlist__eyebrow{ font-size:11px; letter-spacing:0.3em; text-transform:uppercase; opacity:.7; }
+.waitlist__title{ font-family:var(--type-display); font-weight:600; font-size:clamp(40px,6vw,88px); line-height:.94; letter-spacing:-0.025em; }
+.waitlist__title em{ font-family:var(--type-serif); font-style:italic; font-weight:400; }
+.waitlist__sub{ font-family:var(--type-serif); font-style:italic; font-size:20px; opacity:.85; max-width:34ch; }
+.waitlist__form{ display:flex; gap:10px; width:100%; max-width:460px; margin-top:8px; }
+.waitlist__form input{ flex:1; background:transparent; border:1px solid #FAF8F355; color:var(--bg); padding:16px 18px; font-family:var(--type-body); font-size:14px; letter-spacing:0.02em; }
+.waitlist__form input::placeholder{ color:#FAF8F399; }
+.waitlist__form input:focus{ outline:none; border-color:var(--bg); }
+.waitlist__form button{ background:var(--bg); color:var(--ink); padding:0 24px; font-size:11px; letter-spacing:0.25em; text-transform:uppercase; font-weight:500; transition:opacity .3s var(--ease); white-space:nowrap; }
+.waitlist__form button:hover{ opacity:.78; }
+.waitlist__done{ font-family:var(--type-serif); font-style:italic; font-size:20px; min-height:1.2em; }
+.waitlist__note{ font-size:11px; letter-spacing:0.04em; opacity:.6; text-transform:none; }
+
+/* FOOTER mark */
+.foot{ padding-top:96px; }
+.foot__mark{ display:flex; justify-content:center; margin-bottom:56px; }
+.foot__mark .logoimg{ width:clamp(160px,32vw,300px); opacity:.92; }
+
+/* FIVE OBJECTS — seen in shadow */
+.objects{ background:var(--noir); color:#FAF8F3; padding:clamp(96px,15vh,150px) 32px; }
+.objects__head{ max-width:760px; margin:0 auto 60px; text-align:center; }
+.objects__head .e{ font-size:11px; letter-spacing:0.3em; text-transform:uppercase; opacity:.55; }
+.objects__head h2{ font-family:var(--type-display); font-weight:600; font-size:clamp(40px,5.5vw,84px); line-height:.92; letter-spacing:-0.025em; margin:22px 0 0; }
+.objects__head h2 em{ font-family:var(--type-serif); font-style:italic; font-weight:400; }
+.objects__head p{ font-family:var(--type-serif); font-style:italic; font-size:clamp(17px,1.5vw,21px); line-height:1.4; opacity:.62; max-width:46ch; margin:22px auto 0; }
+.objects__row{ max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:repeat(5,1fr); gap:16px; }
+.object{ position:relative; }
+.object__media{ position:relative; aspect-ratio:4/5; overflow:hidden; background:var(--noir-2); }
+.object__media img{ width:100%; height:100%; object-fit:cover; object-position:center; filter:grayscale(.7) brightness(.8) contrast(1.06); transform:scale(1.04); transition:filter 1.2s var(--ease), transform 1.9s var(--ease); }
+.object__media::after{ content:""; position:absolute; inset:0; pointer-events:none; background:radial-gradient(78% 70% at 50% 42%, transparent 26%, rgba(11,10,9,.52) 100%), linear-gradient(180deg, rgba(11,10,9,.30), rgba(11,10,9,.06) 32%, rgba(11,10,9,.50)); transition:opacity 1s var(--ease); }
+.object--soon .object__media img{ filter:grayscale(.85) brightness(.6) contrast(1.08); }
+.object:hover .object__media img{ filter:grayscale(0) brightness(1) contrast(1); transform:scale(1.09); }
+.object:hover .object__media::after{ opacity:.22; }
+.object__name{ margin-top:16px; font-size:11px; letter-spacing:0.25em; text-transform:uppercase; opacity:.72; text-align:center; transition:opacity .4s var(--ease); }
+.object:hover .object__name{ opacity:1; }
+.objects__foot{ max-width:var(--max); margin:50px auto 0; text-align:center; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; opacity:.4; }
+
+/* RESPONSIVE */
+@media (max-width:900px){
+  .nav{ grid-template-columns:1fr; padding:18px 22px; }
+  .nav__left, .nav__right{ display:none; }
+  .nav__mark{ justify-self:center; }
+  .essence__inner{ grid-template-columns:1fr; gap:48px; }
+  .hero__content{ padding:128px 22px 26px; }
+  .hero__bar{ margin:0 22px; }
+  .hero__media img{ object-position:74% 36%; }
+  .hush, .essence, .waitlist, .objects, .after, .feed{ padding-left:22px; padding-right:22px; }
+  .after__grid{ grid-template-columns:1fr; }
+  .after__second{ max-width:100%; }
+  .after__side{ padding-top:0; }
+  .feed__grid{ grid-template-columns:1fr 1fr; }
+  .hero__bar .scroll{ display:none; }
+  .objects__row{ grid-auto-flow:column; grid-auto-columns:62%; grid-template-columns:none; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; padding-bottom:8px; }
+  .object{ scroll-snap-align:start; }
+}
+</style>
+</head>
+<body class="grain">
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav__left"><a href="/event">Amsterdam · MMXXVI</a></div>
+  <a href="#" class="nav__mark"><span class="logomark logomark--white"><span>ohá</span></span></a>
+  <div class="nav__right"><a href="/event" class="nav__event">The afternoon</a></div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero__media" data-parallax="5">
+    <img src="references/opt/gen_running_v2.webp" alt="A woman running by the sea at dawn in black activewear" fetchpriority="high" decoding="async" />
+  </div>
+  <div class="hero__veil"></div>
+  <div class="hero__content reveal-stagger">
+    <span class="hero__eyebrow">The first afternoon of the new ohá · it happened</span>
+    <h1 class="hero__title">You were not invited to a launch. <b>You began.</b></h1>
+    <p class="hero__sub">On the last Sunday of June, forty women rolled out forty mats in a room full of daylight in Amsterdam. One class, Turkish coffee, matcha — and the new ohá, finally out in the open. This is what it looked like.</p>
+    <div class="hero__ctas">
+      <a href="#afternoon" class="btn btn--solid">see the afternoon</a>
+      <a href="https://www.instagram.com/ohabysuhedaozyar/" target="_blank" rel="noopener" class="btn btn--ghost">follow ohá ↗</a>
+    </div>
+  </div>
+  <div class="hero__bar reveal">
+    <span><strong>28 · 06 · 2026</strong></span>
+    <span>Atelier Oost · Amsterdam</span>
+    <span>40 mats · sold out</span>
+    <span>#myohá</span>
+    <span class="scroll">scroll</span>
+  </div>
+</header>
+
+<!-- HUSH -->
+<section class="hush">
+  <div>
+    <p class="hush__line reveal">No launch noise. No press. No countdown. <em>Just a room, forty mats — and forty women who were there first.</em></p>
+    <p class="hush__sub reveal">— 28 June 2026 · Amsterdam · sold out</p>
+  </div>
+</section>
+
+<!-- THE AFTERNOON — remembered -->
+<section class="after" id="afternoon">
+  <div class="after__inner">
+    <div class="after__head reveal">
+      <span class="t-eyebrow">— wat een dag · 28 · 06 · 2026</span>
+      <h2 class="after__title">The afternoon, <em>remembered.</em></h2>
+    </div>
+    <div class="after__grid">
+      <figure class="after__main reveal">
+        <img src="references/opt/ig_event_suheda_walk.webp" alt="Şüheda walking through the ohá event room — forty black mats, goodie bags and the white ohá letters in daylight at Atelier Oost, Amsterdam" loading="lazy" decoding="async" />
+      </figure>
+      <div class="after__side">
+        <blockquote class="after__quote reveal">
+          <p>“Still smiling after such a beautiful event.”</p>
+          <cite>— Şüheda · the day after</cite>
+        </blockquote>
+        <figure class="after__second reveal">
+          <img src="references/opt/ig_event_community.webp" alt="Şüheda kneeling in front of the seated ohá community before the white ohá letters" loading="lazy" decoding="async" />
+        </figure>
+        <ul class="after__facts reveal-stagger">
+          <li><strong>40</strong><span>mats — all taken</span></li>
+          <li><strong>3h</strong><span>of slowing down</span></li>
+          <li><strong>#myohá</strong><span>the story continues</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ESSENCE -->
+<section class="essence">
+  <div class="essence__inner">
+    <div>
+      <span class="t-eyebrow reveal">— what it was</span>
+      <p class="essence__lead reveal" style="margin-top:24px">A small, considered afternoon. Not a launch party. A first class. A first community. Exactly as promised.</p>
+      <p class="essence__body reveal">Forty people on forty mats in a room full of daylight. One guided class, then Turkish coffee, matcha, and a goodie bag with the new ohá inside. To the forty who were there — thank you for beginning with us. To everyone who watched from afar: the story is only starting.</p>
+      <div class="essence__cta reveal">
+        <a href="/event" class="btn btn--dark">Read how it was planned</a>
+      </div>
+    </div>
+    <div class="essence__facts reveal-stagger">
+      <div class="fact"><h5>The date</h5><p>28 · 06 <em>·</em> 26</p><span>Sunday afternoon</span></div>
+      <div class="fact"><h5>The hours</h5><p>14 — 17</p><span>Doors at two</span></div>
+      <div class="fact"><h5>The place</h5><p>Atelier <em>Oost</em></p><span>Amsterdam, NL</span></div>
+      <div class="fact"><h5>The room</h5><p data-spots>30</p><span>of 40 left · €49 inclusive</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE BAND -->
+<div class="band marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>ohá</span><span>the first afternoon · it happened</span><span>28 · 06 · 2026</span><span>amsterdam</span><span>#myohá</span><span>wear the energy you want to feel</span>
+    <span>ohá</span><span>the first afternoon · it happened</span><span>28 · 06 · 2026</span><span>amsterdam</span><span>#myohá</span><span>wear the energy you want to feel</span>
+  </div>
+</div>
+
+<!-- FROM THE FEED — instagram -->
+<section class="feed">
+  <div class="feed__head reveal">
+    <span class="e">— from the feed</span>
+    <h2>The story continues <em>on Instagram.</em></h2>
+    <p>The room before the doors opened, the mornings after, the objects on their way — ohá lives between afternoons at <a href="https://www.instagram.com/ohabysuhedaozyar/" target="_blank" rel="noopener">@ohabysuhedaozyar</a>.</p>
+  </div>
+  <div class="feed__grid reveal-stagger">
+    <a class="tile" href="https://www.instagram.com/ohabysuhedaozyar/" target="_blank" rel="noopener">
+      <img src="references/opt/ig_feed_room.webp" alt="The ohá event room, ready — forty mats, goodie bags and the white ohá letters" loading="lazy" decoding="async" />
+      <span class="tile__hint">open on instagram ↗</span>
+    </a>
+    <a class="tile" href="https://www.instagram.com/ohabysuhedaozyar/" target="_blank" rel="noopener">
+      <img src="references/opt/ig_feed_pov.webp" alt="POV — hosting the first ohá Pilates event in the Netherlands" loading="lazy" decoding="async" />
+      <span class="tile__hint">open on instagram ↗</span>
+    </a>
+    <a class="tile" href="https://www.instagram.com/ohabysuhedaozyar/" target="_blank" rel="noopener">
+      <img src="references/opt/ig_feed_dream.webp" alt="Don’t tell your dream to everybody around — reel from the ohá afternoon" loading="lazy" decoding="async" />
+      <span class="tile__hint">open on instagram ↗</span>
+    </a>
+    <a class="tile" href="https://www.instagram.com/ohabysuhedaozyar/" target="_blank" rel="noopener">
+      <img src="references/opt/ig_feed_poster.webp" alt="The ohá Pilates event poster — 28 June 2026, Amsterdam, #myohá" loading="lazy" decoding="async" />
+      <span class="tile__hint">open on instagram ↗</span>
+    </a>
+  </div>
+  <div class="feed__cta reveal">
+    <a href="https://www.instagram.com/ohabysuhedaozyar/" target="_blank" rel="noopener" class="btn btn--dark">follow @ohabysuhedaozyar</a>
+  </div>
+</section>
+
+<!-- FIVE OBJECTS — seen in shadow -->
+<section class="objects">
+  <div class="objects__head reveal">
+    <span class="e">— the house of objects</span>
+    <h2>Five objects, <em>to begin.</em></h2>
+    <p>A mat. A clip. A grip. A towel. A shopper. Kept in shadow until the day we open — then yours, to wear the energy you want to feel.</p>
+  </div>
+  <div class="objects__row reveal-stagger">
+    <figure class="object"><div class="object__media"><img src="references/opt/mat.webp" alt="ohá mat" loading="lazy" style="object-position:center 50%" /></div><figcaption class="object__name">the mat</figcaption></figure>
+    <figure class="object"><div class="object__media"><img src="references/real_products/real_clip_hand.webp" alt="ohá clip" loading="lazy" style="object-position:42% 47%" /></div><figcaption class="object__name">the clip</figcaption></figure>
+    <figure class="object"><div class="object__media"><img src="references/real_products/real_sock_lifestyle.webp" alt="ohá grip socks" loading="lazy" style="object-position:center 40%" /></div><figcaption class="object__name">the grip</figcaption></figure>
+    <figure class="object"><div class="object__media"><img src="references/opt/towel.webp" alt="ohá towel" loading="lazy" style="object-position:center 58%" /></div><figcaption class="object__name">the towel</figcaption></figure>
+    <figure class="object"><div class="object__media"><img src="references/opt/shopper.webp" alt="ohá shopper bag" loading="lazy" style="object-position:center 42%" /></div><figcaption class="object__name">the shopper</figcaption></figure>
+  </div>
+  <p class="objects__foot reveal">revealed in time</p>
+</section>
+
+<!-- WAITLIST -->
+<section class="waitlist">
+  <div class="waitlist__inner reveal-stagger">
+    <span class="waitlist__eyebrow">— after the afternoon</span>
+    <h2 class="waitlist__title">The objects come <em>next.</em></h2>
+    <p class="waitlist__sub">Five things for the body, the morning, and the hour before the day insists. Be the first to know when the house opens.</p>
+    <form class="waitlist__form" id="wl">
+      <input type="email" name="email" placeholder="your email" required aria-label="email" />
+      <button type="submit">Notify me</button>
+    </form>
+    <p class="waitlist__done" id="wl-done" aria-live="polite"></p>
+    <p class="waitlist__note">One letter from ohá. Once. Never noise.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot__mark"><img class="logoimg" src="assets/oha-mark-white.png" alt="ohá" /></div>
+  <div class="foot__inner">
+    <span>© 2026 ohá · Amsterdam</span>
+    <span><a href="mailto:contact@shopoha.com">contact@shopoha.com</a></span>
+    <span><a href="https://www.instagram.com/ohabysuhedaozyar/" target="_blank" rel="noopener">@ohabysuhedaozyar</a></span>
+    <span><a href="/event">the afternoon →</a></span>
+  </div>
+</footer>
+
+<!-- MOTION -->
+<script src="assets/lenis.min.js"></script>
+<script src="assets/oha-motion.js" defer></script>
+<script>
+/* waitlist — opens an email so the signup actually goes somewhere.
+   Wire to Klaviyo/Shopify forms at launch and replace this handler. */
+document.getElementById('wl').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var email = (this.email.value || '').trim();
+  if (!email) return;
+  window.location.href = 'mailto:contact@shopoha.com'
+    + '?subject=' + encodeURIComponent('ohá — waitlist')
+    + '&body=' + encodeURIComponent('Please add me to the ohá waitlist: ' + email);
+  this.style.display = 'none';
+  document.getElementById('wl-done').textContent = 'Thank you — confirm in your mail app to join.';
+});
+</script>
+
+</body>
+</html>

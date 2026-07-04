@@ -1,0 +1,40 @@
+name: spots
+# Probes real Shopify availability for the event ticket and publishes it as
+# spots.json so the static site can subtract real sales from the FOMO number.
+# Non-invasive: requests qty 99, Shopify caps the session cart at actual stock;
+# the cart is cleared afterwards and belongs only to this probe's cookie jar.
+on:
+  schedule:
+    - cron: '23 */3 * * *'   # every 3 hours
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency: spots
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe Shopify availability
+        run: |
+          J=$(mktemp)
+          UA="Mozilla/5.0 (compatible; oha-spots-probe/1.0)"
+          curl -s -c "$J" -b "$J" -L -o /dev/null -A "$UA" \
+            "https://shopoha.myshopify.com/cart/56715140596038:99" --max-time 30
+          N=$(curl -s -c "$J" -b "$J" -A "$UA" \
+            "https://shopoha.myshopify.com/cart.js" --max-time 20 \
+            | python3 -c "import sys,json;print(json.load(sys.stdin)['item_count'])")
+          curl -s -c "$J" -b "$J" -o /dev/null -A "$UA" \
+            "https://shopoha.myshopify.com/cart/clear" --max-time 20
+          rm -f "$J"
+          case "$N" in (*[!0-9]*|'') echo "probe failed: '$N'"; exit 1 ;; esac
+          printf '{"available":%s,"checked":"%s"}\n' "$N" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > spots.json
+          cat spots.json
+      - name: Commit if changed
+        run: |
+          git config user.name "oha-spots-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add spots.json
+          git diff --cached --quiet && { echo "no change"; exit 0; }
+          git commit -m "spots: update real availability [skip ci]"
+          git push
